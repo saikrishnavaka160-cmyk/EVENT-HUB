@@ -1,11 +1,14 @@
-<div align="center">
+# EVENT HUB
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+College ID login, registration and a campus event workspace.
 
-  <h1>Built with AI Studio</h2>
+**Windows:** extract the source ZIP and double-click `START EVENT HUB.cmd`. The first run needs internet access to install missing Node/npm dependencies. Open http://127.0.0.1:5173/ and register with your own College ID and password.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- [Account setup, endpoints and security](README-AUTH.md)
+- [Local running, backups and diagnostics](README-LOCAL.md)
+- [Event workflows](README-EVENTHUB.md)
+- [Private body files, assigned work and attendance scanners](README-BODY-OPERATIONS.md)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+IDs use `^[0-9]{2}1FA[A-Z0-9]{5}$` after trimming and uppercasing. Passwords retain their exact case and spaces, require eight characters, and are stored only as bcrypt hashes. There are no default account passwords.
 
-</div>
+The ZIP contains source, migrations, tests and assets. Installed dependencies, private database files, sessions, runtime caches, secrets and Git history are excluded.
